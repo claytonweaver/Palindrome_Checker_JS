@@ -3,7 +3,7 @@
 function checkPalindrome(){
     
     let word1 = document.getElementById("word1").value;
-    let word2 = document.getElementById("word2").value;
+    let word2 = word1;
 
 
 
@@ -19,13 +19,13 @@ for(i = 0; i < word1.length; i++)
         j--;
     }
 }
-if (sum === word2.length)
+if (sum === word1.length)
 {
     alert(`${word1} is a palindrome!`);
 }
 else 
 {
-    alert(`${word1} is not a palindrome of ${word2}!`);
+    alert(`${word1} is not a palindrome...`);
 }
 
 };
